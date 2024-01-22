@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Founders Grotesk';
+    src: url(/Fonts/Founders_Grotesk/FoundersGrotesk-Medium.otf);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+body{
+    font-family: 'Founders Grotesk';
+}
+
+.container{
+    width: 100%;
+    height: 120vh;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 12.3vw; 
+    text-align: center;
+}
+
+.contents{
+    width: 100%;
+    height: 120vh;
+    position: absolute;
+    overflow: hidden;
+    padding-top: 2rem;
+}
+
+.flavour-wrapper{
+    background-color: #F4B9C8;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    border: 1rem solid #FCDDE5;
+    position: relative;
+    float: right;
+    right: 0%;
+    bottom: 0%;
+    transform: translateX(50%) translateY(35%);
+    z-index: 99;
+}
+
+.flavour{
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    position: absolute;
+}
+
+.flavour-btn{
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    border: none;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
+    z-index: 50;
+    transform: none;
+    background-color: #F4B9C8;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    clip-path: circle(100% at 50% 50%);
+    transition: clip-path 0.8s ease-in-out;
+}
+
+.content-img{
+    height: 90%;
+    width: auto;
+    object-fit: contain;
+    border: 1px red solid;
+    margin-top: -4rem;
+}
+
+.flavour:nth-child(1) {
+    transform: rotate(38.58deg);
+}
+
+.flavour:nth-child(1) .flavour-btn{
+    background: url(/Images/Boba_x_Ice_Cream_PikaChurro_Icon.webp);
+    background-size: cover;
+    transform: rotateZ(-38.58deg);
+
+}
+
+.flavour:nth-child(2) {
+    transform: rotate(25.72deg);
+}
+
+.flavour:nth-child(2) .flavour-btn{
+    background: url(/Images/Boba_x_Ice_Cream_UBE_Icon.webp);
+    background-size: cover;
+    transform: rotateZ(-25.72deg);
+
+}
+
+.flavour:nth-child(3) {
+    transform: rotate(12.86deg);
+}
+
+.flavour:nth-child(3) .flavour-btn{
+    background: url(/Images/Boba_x_Ice_Cream_Muracoffee_Icon.webp);
+    background-size: cover;
+    transform: rotateZ(-12.86deg);
+
+}
+
+.flavour:nth-child(4) {
+    transform: rotate(0.00deg);
+}
+
+.flavour:nth-child(4) .flavour-btn{
+    background: url(/Images/Boba_x_Ice_Cream_Banana_Icon.webp);
+    background-size: cover;
+    transform: rotateZ(0deg);
+}
+
+.flavour:nth-child(5) {
+    transform: rotate(-12.86deg);
+}
+
+.flavour:nth-child(5) .flavour-btn{
+    background: url(/Images/Boba_x_Ice_Cream_Mango_Icon.webp);
+    background-size: cover;
+    transform: rotateZ(12.86deg);
+
+}
+
+.flavour:nth-child(6) {
+    transform: rotate(-25.72deg);
+}
+
+.flavour:nth-child(6) .flavour-btn{
+    background: url(/Images//Boba_x_Ice_Cream_Strawberry_Icon.webp);
+    background-size: cover;
+    transform: rotateZ(25.72deg);
+
+}
+
+

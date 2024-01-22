@@ -12,3 +12,27 @@ html {
     margin: 0;
 }
 
+.container{
+    width: 100%;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Founders Grotesk';
+    font-size: 12vw;
+    text-align: center;
+}
+
+.slide-image{
+    height: 90vh;
+    width: auto;
+    object-fit: contain;
+    margin-top: -6rem;
+}

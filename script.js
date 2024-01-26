@@ -26,9 +26,9 @@ strawberryAnm.call(() => {
   });// Add new clipPath coordinates & open
 strawberryAnm.fromTo('.masked-page', { clipPath: 'circle(0% at 76% 90%)' }, { clipPath: 'circle(100% at 50% 50%)' });
 // Scale image up mid-transition
-strawberryAnm.fromTo('.masked-image', { scale: 0.8 }, { scale: 1, duration: 0.3, ease: "power1.inOut" });
+strawberryAnm.fromTo('.masked-image', { scale: '0.9' }, { scale: '1', duration: '0.3', ease: "power1.inOut" },'-=0.3');
 // Change main bg and image
-strawberryAnm.to('.content', { backgroundColor: '#FCCCD3' });
+strawberryAnm.to('.content', { backgroundColor: '#FCCCD3' }, '+=0.3');
 strawberryAnm.call(() => { mainImage.src = '/Images/Boba_x_Ice_Cream_Strawberry.webp'; });
 // close masked page
 strawberryAnm.to('.masked-page', { opacity: '0', clipPath: 'circle(0% at 76% 90%)', duration: '0' });

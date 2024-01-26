@@ -14,14 +14,18 @@ html {
 
 .container{
     width: 100%;
-    padding-top: 2rem;
+    height: 100vh;
     overflow: hidden;
 }
 
-.content{
+.content, .masked-page{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 2rem;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
 }
 
 h1{
@@ -30,9 +34,122 @@ h1{
     text-align: center;
 }
 
-.slide-image{
+.slide-image, .masked-image{
     height: 90vh;
     width: auto;
     object-fit: contain;
-    margin-top: -6rem;
+    position: absolute;
+    top: 20%;
+}
+
+.masked-page{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    left: 0%;
+    background-color: #DC2132;
+    clip-path: circle(0% at 76% 90%);
+    transition: clip-path 0.5s linear;
+
+}
+
+.masked-page .slide-image{
+    scale: 0.8;
+}
+
+.mask-btn-wrapper{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    background-color: #F4B9C7;
+    border: 1rem solid #FCDDE5;
+    transform: translateX(50%) translateY(50%);
+}
+
+.flavour-wrapper{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.flavour-wrapper:nth-child(1) {
+    transform: rotate(31deg);
+}
+
+.flavour-wrapper:nth-child(1) .mask-btn {
+    transform: rotate(-31deg);
+    background: url(/Images/Boba_x_Ice_Cream_PikaChurro_Icon.webp);
+    background-size: cover;
+}
+
+.flavour-wrapper:nth-child(2) {
+    transform: rotate(18deg);
+}
+
+.flavour-wrapper:nth-child(2) .mask-btn {
+    transform: rotate(-18deg);
+    background: url(/Images/Boba_x_Ice_Cream_UBE_Icon.webp);
+    background-size: cover;
+}
+
+.flavour-wrapper:nth-child(3) {
+    transform: rotate(5deg);
+}
+
+.flavour-wrapper:nth-child(3) .mask-btn {
+    transform: rotate(-5deg);
+    background: url(/Images/Boba_x_Ice_Cream_Muracoffee_Icon.webp);
+    background-size: cover;
+}
+
+.flavour-wrapper:nth-child(4) {
+    transform: rotate(-8deg);
+}
+
+.flavour-wrapper:nth-child(4) .mask-btn {
+    transform: rotate(8deg);
+    background: url(/Images/Boba_x_Ice_Cream_Banana_Icon.webp);
+    background-size: cover;
+}
+
+.flavour-wrapper:nth-child(5) {
+    transform: rotate(-21deg);
+}
+
+.flavour-wrapper:nth-child(5) .mask-btn {
+    transform: rotate(21deg);
+    background: url(/Images/Boba_x_Ice_Cream_Mango_Icon.webp);
+    background-size: cover;
+}
+
+.flavour-wrapper:nth-child(6) {
+    transform: rotate(-34deg);
+}
+
+.flavour-wrapper:nth-child(6) .mask-btn {
+    transform: rotate(34deg);
+    background: url(/Images/Boba_x_Ice_Cream_Strawberry_Icon.webp);
+    background-size: cover;
+}
+
+
+
+
+
+
+
+.mask-btn{
+    height: 3.5rem;
+    width: 3.5rem;
+    border: 1px red solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
 }

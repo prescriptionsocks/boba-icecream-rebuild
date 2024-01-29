@@ -50,8 +50,6 @@ h1{
     left: 0%;
     background-color: #DC2132;
     clip-path: circle(0% at 76% 90%);
-    transition: clip-path 0.5s linear;
-
 }
 
 .masked-page .slide-image{
